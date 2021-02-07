@@ -1,0 +1,22 @@
+{
+  "name": "link-preview-server",
+  "version": "1.0.0",
+  "description": "This is a simple NodeJS wrapper around the npm library [link-preview-generator](https://github.com/AndrejGajdos/link-preview-generator) created by [AndrejGajdos](https://github.com/AndrejGajdos) - you can read more about how the library works on [Andrej's blog](https://andrejgajdos.com/how-to-create-a-link-preview/).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mklilley/link-preview-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mklilley/link-preview-server/issues"
+  },
+  "homepage": "https://github.com/mklilley/link-preview-server#readme",
+  "dependencies": {
+    "link-preview-generator": "0.0.4"
+  }
+}
