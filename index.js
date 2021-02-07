@@ -27,7 +27,16 @@ const requestHandler = (req, res) => {
       res.setHeader("Content-Type", "application/json");
       res.end(JSON.stringify({ error: "Request body not JSON" }));
     }
-    if (url) {
+    if (url === undefined) {
+      console.log("ERROR: There is no url key in the json body");
+      res.statusCode = 400;
+      res.setHeader("Content-Type", "application/json");
+      res.end(
+        JSON.stringify({
+          error: "Request body does not contain url key, i.e. {'url': ...}",
+        })
+      );
+    } else {
       // This regex pattern will recognise most standard links. Improvements are welcome 🙏.
       const urlRegex = /(\b(https?):\/\/[-A-Z0-9+&@#/%?=~_|!:,.;]*[-A-Z0-9+&@#/%=~_|])/gi;
 
@@ -64,15 +73,6 @@ const requestHandler = (req, res) => {
           })
         );
       }
-    } else {
-      console.log("ERROR: There is no url key in the json body");
-      res.statusCode = 400;
-      res.setHeader("Content-Type", "application/json");
-      res.end(
-        JSON.stringify({
-          error: "Request body does not contain url key, i.e. {'url': ...}",
-        })
-      );
     }
   });
 };
