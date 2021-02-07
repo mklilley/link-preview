@@ -65,7 +65,7 @@ const requestHandler = (req, res) => {
         );
       }
     } else {
-      console.log("ERROR: There is url key in the json body");
+      console.log("ERROR: There is no url key in the json body");
       res.statusCode = 400;
       res.setHeader("Content-Type", "application/json");
       res.end(
