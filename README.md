@@ -4,19 +4,18 @@ This is a NodeJS wrapper around the npm library [link-preview-generator](https:/
 
 The server expects a post request with a JSON body in the form:
 
-```
+```json
 {"url" : "https://example.com"}
 ```
 
 It returns json with the link preview data in the form:
 
-```
+```json
 {
-title: "Example page",
-description "This is an example page",
-image: "https://example.com/img/image.png",
-domain: "example.com"
-
+"title": "Example page",
+"description": "This is an example page",
+"image": "https://example.com/img/image.png",
+"domain": "example.com"
 }
 ```
 
