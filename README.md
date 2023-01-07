@@ -5,7 +5,7 @@ This is a NodeJS wrapper around the npm library [link-preview-generator](https:/
 The server expects a post request with a JSON body in the form:
 
 ```
-{url : "https://example.com"}
+{"url" : "https://example.com"}
 ```
 
 It returns json with the link preview data in the form:
