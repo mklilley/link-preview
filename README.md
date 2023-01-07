@@ -19,7 +19,7 @@ It returns json with the link preview data in the form:
 }
 ```
 
-Note, this is a simple http server. If you want it to respond to https requests, then you'll either need to modify the server code, see e.g. [How to create an https server?](https://nodejs.org/en/knowledge/HTTP/servers/how-to-create-a-HTTPS-server/), or put the node server behind a reverse proxy, see e.g. [NGINX Reverse Proxy](https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/).
+Note, this is a simple http server. If you want it to respond to secure https requests, then you'll either need to modify the server code, see e.g. [How to create an https server?](https://nodejs.org/en/knowledge/HTTP/servers/how-to-create-a-HTTPS-server/), or put the node server behind a reverse proxy, see e.g. [NGINX Reverse Proxy](https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/).
 
 Second note. For running on Linux, you might encounter some errors associated with puppetteer. I found the links below helpful:
 
